@@ -1,0 +1,9 @@
+{
+  "name": "Multi-Service Devcontainer",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "extensions": ["ms-python.python"],
+  "forwardPorts": [8000, 5432],
+  "remoteUser": "root"
+}
