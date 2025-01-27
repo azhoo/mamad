@@ -1,9 +1,15 @@
+// .devcontainer/devcontainer.json
 {
-  "name": "Multi-Service Devcontainer",
+  "name": "Postgres & pgAdmin Devcontainer",
   "dockerComposeFile": "docker-compose.yml",
-  "service": "app",
+  "service": "postgres",
   "workspaceFolder": "/workspace",
-  "extensions": ["ms-python.python"],
-  "forwardPorts": [8000, 5432],
+  "extensions": [
+    "ms-python.python", // Example extension
+    "ms-azuretools.vscode-docker"
+  ],
+  "forwardPorts": [5432, 8080],
+  "postCreateCommand": "echo 'Postgres and pgAdmin are ready!'",
   "remoteUser": "root"
 }
+
