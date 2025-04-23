@@ -22,7 +22,7 @@ chmod +x ~/.vnc/xstartup
 
 
 
-vncserver :1 -geometry 1280x800 -depth 24 -SecurityTypes None
+vncserver :1 -geometry 1024x576 -depth 24 -SecurityTypes None
 
 
 websockify --web /usr/share/novnc 6080 localhost:5901
